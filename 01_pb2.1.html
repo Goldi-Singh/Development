@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	iSIM
+</title><meta charset="utf-8" /><meta http-equiv="Page-Enter" content="Alpha(opacity=100)" /><link rel="shortcut icon" href="favicon.ico" /><script src="/ISIMGLB/ResourceHandler.ashx?keys=" type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web" rel="stylesheet" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link type="text/css" rel="stylesheet" href="App_Themes/Default/Assets/sim.css" /><link type="text/css" rel="stylesheet" href="App_Themes/Default/Assets/bootstrap.css" /><link type="text/css" rel="stylesheet" href="App_Themes/Default/Assets/menu.css" /><link type="text/css" rel="stylesheet" href="App_Themes/Default/Assets/calender.css" /><link type="text/css" rel="stylesheet" href="App_Themes/Default/Assets/contentslider.css" /><link type="text/css" rel="stylesheet" href="App_Themes/Default/Assets/example_ticker.css" />
+    <style>
+        .blink_me
+        {
+            animation: blinker 1s linear infinite;
+            text-transform: capitalize;
+        }
+        @keyframes@keyframes@keyframes@keyframesblinker{50%{opacity:0;color:#ffff00;}</style>
+</head>
+<body id="MasterPageBodyTag" data-spy="scroll">
+    <form method="post" action="/ISIMGLB/Home" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTY0NDE4NTg2D2QWAmYPZBYCAgQPZBYCAgEPFgIeBmFjdGlvbgUNL0lTSU1HTEIvSG9tZRZOZg9kFgICAQ8PFgIeBFRleHRlZGQCCA8PFgIfAQVGPGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvZm9yLnBuZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjU3IiAvPmRkAgkPDxYCHwEFZzxzcGFuIGNsYXNzPSJsZWZ0Ij4gPGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvY29sbGVnZS1sb2dvLnBuZyIgY2xhc3M9ImNvbGxlZ2Vsb2dvIiAvPjwvc3Bhbj5kZAIKDw8WAh8BBRo8YSBocmVmPSJob21lIj5HTEJBSkFKPC9hPmRkAgsPFgIeB1Zpc2libGVoZAIMD2QWAgIBDxYCHgNzcmMFby9JU0lNR0xCL1NlcnZpY2VzL2dldEltYWdlLmFzaHg/Q2F0ZWdvcnk9U3R1ZGVudCZNYXN0ZXJJZD02MzAxNSZJbWFnZVJlZk5hbWU9UGhvdG8mSWRDb2RlPSZoZWlnaHQ9MTIwJndpZHRoPTEwMGQCDQ8WAh8CaGQCDg9kFgICAQ8WAh8DBW8vSVNJTUdMQi9TZXJ2aWNlcy9nZXRJbWFnZS5hc2h4P0NhdGVnb3J5PVN0dWRlbnQmTWFzdGVySWQ9NjMwMTUmSW1hZ2VSZWZOYW1lPVBob3RvJklkQ29kZT0maGVpZ2h0PTEyMCZ3aWR0aD0xMDBkAg8PDxYCHwEFC0dPTERJIFNJTkdIZGQCEQ8WAh4JaW5uZXJodG1sBUA8aW1nIHNyYz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYWNrZ3JvdW5kLW5ld3MtdXBkYXRlLmpwZyI+ZAISDw8WAh8BBRQ8c3Bhbj5Db2xsZWdlPC9zcGFuPmRkAhMPDxYCHwEFEzxzcGFuPkFsZXJ0czwvc3Bhbj5kZAIUDxYCHwQFlgE8YSBocmVmPSJTdHVkZW50L0FsZXJ0cyI+PGRpdiBjbGFzcz0nY29udGVudGRpdic+IDxkaXY+IDxzcGFuPkFsZXJ0cyBpbmZvIDwvc3Bhbj4gIDxoND4gQWxlcnRzIDwvaDQ+ICA8cD5DbGljayBIZXJlIGZvciBEZXRhaWxzLi48L3A+PC9kaXY+IDwvZGl2PjwvYT5kAhUPDxYCHwEFFzxzcGFuPkF0dGVuZGFuY2U8L3NwYW4+ZGQCFg8WAh8EBcEGPGEgaHJlZj0iU3R1ZGVudC9Ub2RheUF0dGVuZGVuY2UiIj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBBdHRlbmRhbmNlIDwvaDQ+ICA8cD5Zb3UgaGF2ZSBBdHRlbmRlbnQgVG9kYXkgQ2xhc3NlcyAgMCBPdXQgT2YgNjwvcD48L2Rpdj4gPC9kaXY+PGRpdiBjbGFzcz0nY29udGVudGRpdic+IDxkaXY+IDxzcGFuPkFsZXJ0IDwvc3Bhbj4gIDxoND4gQXR0ZW5kYW5jZSA8L2g0PiAgPHA+WW91IHdlcmUgQWJzZW50IGluIGZvbGxvd2luZyBFbmdpbmVlcmluZyBDaGVtaXN0cnkgKEJBUy0yMDIpPC9wPjwvZGl2PiA8L2Rpdj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBBdHRlbmRhbmNlIDwvaDQ+ICA8cD5Zb3Ugd2VyZSBBYnNlbnQgaW4gZm9sbG93aW5nIEZ1bmRhbWVudGFsIG9mICBFbGVjdHJvbmljcyBFbmdpbmVlcmluZyAoQkVDLTIwMSk8L3A+PC9kaXY+IDwvZGl2PjxkaXYgY2xhc3M9J2NvbnRlbnRkaXYnPiA8ZGl2PiA8c3Bhbj5BbGVydCA8L3NwYW4+ICA8aDQ+IEF0dGVuZGFuY2UgPC9oND4gIDxwPllvdSB3ZXJlIEFic2VudCBpbiBmb2xsb3dpbmcgRnVuZGFtZW50YWxzIG9mIE1lY2hhbmljYWwgRW5naW5lZXJpbmcgKEJNRS0yMDEpPC9wPjwvZGl2PiA8L2Rpdj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBBdHRlbmRhbmNlIDwvaDQ+ICA8cD5Zb3Ugd2VyZSBBYnNlbnQgaW4gZm9sbG93aW5nIFdvcmtzaG9wIFByYWN0aWNlIExhYiAoQldTLTI1MSk8L3A+PC9kaXY+IDwvZGl2PjwvYT5kAhcPFgIfBAUyPGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvbGlicmFyeTMucG5nIj5kAhgPDxYCHwEFFDxzcGFuPkxpYnJhcnk8L3NwYW4+ZGQCGQ8WAh8EBbIEPGRpdiBjbGFzcz0iZGVzY3JpcHRpb25faXRlbV9jYXRlZ29yeTQgZGlzcF9pdGVtX2NhdGVnb3J5NCI+PGRpdiBpZD0ic2xpZGVyNSIgY2xhc3M9InNsaWRlcndyYXBwZXIiPjxhIGhyZWY9IkxpYnJhcnkvTGliSXNzdWVSZXR1cm4iPjxkaXYgY2xhc3M9J2NvbnRlbnRkaXYnPiA8ZGl2PiA8c3Bhbj5MaWJyYXJ5IEluZm8gPC9zcGFuPiAgPGg0PiBMaWJyYXJ5IDwvaDQ+ICA8cD5DbGljayBIZXJlIGZvciBEZXRhaWxzLi48L3A+PC9kaXY+IDwvZGl2PjxkaXYgSWQ9InBhZ2luYXRlLXNsaWRlcjUiIiBjbGFzcz0icGFnaW5hdGlvbjEiPjxhIGhyZWY9IiMiIGNsYXNzPSJwcmV2IiBzdHlsZT0ibWFyZ2luLWxlZnQ6IDEwcHgiPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL25ld3MtbGVmdC1hcnJvdy5wbmciIGNsYXNzPSJuZXdzX2ljb24iPjwvYT4gPGEgaHJlZj0iIyIgY2xhc3M9Im5leHQiPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL25ld3MtcmlnaHQtYXJyb3cucG5nIiBjbGFzcz0ibmV3c19pY29uIj48L2E+PC9kaXY+PC9hPjwvZGl2PjwvZGl2PmQCGg8PFgIfAQUTPHNwYW4+Tm90aWNlPC9zcGFuPmRkAhsPFgIfBAVFPGEgIEhyZWY9IlV0aWxpdGllcy9DaXJjdWxhciIgU3R5bGU9ImZvbnRzaXplOiAxMnB4IiA+Tm90aWNlPC9hPiA8YnI+ZAIcDxYCHwQFqQQ8YSBocmVmPSJodHRwczovL3d3dy5nbGJhamFqZ3JvdXAub3JnLyIgb25jbGljaz0iamF2YXNjcmlwdDp2b2lkIHdpbmRvdy5vcGVuKCIiLCIiLCJ3aWR0aD0xMDAwLGhlaWdodD03MDAsdG9vbGJhcj0wLG1lbnViYXI9MCxsb2NhdGlvbj0wLHN0YXR1cz0xLHNjcm9sbGJhcnM9MSxyZXNpemFibGU9MSxsZWZ0PTAsdG9wPTAiKTtyZXR1cm4gZmFsc2U7Ij48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXIxLmpwZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXIyLnBuZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXIzLmpwZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXI0LnBuZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48L2E+ZAIdDxYCHwQFezxhIGhyZWY9Imh0dHA6Ly93d3cuZmFjZWJvb2suY29tLy4uIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvRmFjZWJvb2stTG9nby5qcGciIGJvcmRlcj0iMCI+PC9hPmQCHw8WAh8EBbMDPGEgaHJlZj0iaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLy4uLiI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvaXRlbV9jYXRlZ29yeTguanBnIj48ZGl2IGNsYXNzPSJoZWFkaW5nX2l0ZW1fY2F0ZWdvcnk4Ij48c3Bhbj5OYXVrcmk8L3NwYW4+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvbGlicmFyeS1pY29uLnBuZyIgc3R5bGU9Ii1tb3otdHJhbnNmb3JtOiBzY2FsZSgxLjApOy13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxLjApOyAtby10cmFuc2Zvcm06IHNjYWxlKDEuMCk7IC1tcy10cmFuc2Zvcm06IHNjYWxlKDEuMCk7dHJhbnNmb3JtOiBzY2FsZSgxLjApOyI+PC9kaXY+PGRpdiBpZD0idGlja2VyMyIgY2xhc3M9ImRlc2NyaXB0aW9uX2l0ZW1fY2F0ZWdvcnk4IGRpc3BfaXRlbV9jYXRlZ29yeTgiPiA8L2Rpdj48L2E+ZAIhDxYCHwQFiwE8YSBocmVmPSJTdHVkZW50L1RpbWVUYWJsZSI+PGRpdiBjbGFzcz0ibWFpbmhlYWRpbmciPlNUVURFTlQgVElNRVRBQkxFPC9kaXY+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvb3JhbmdlLWJhY2tncm91bmQuanBnIj48L2E+ZAIjDxYCHwQF1QE8YSBocmVmPSAiVXRpbGl0aWVzL0NpcmN1bGFyP2RvY3R5cGU9cGxhY2VtZW50IiBhYmM9IlV0aWxpdGllcy9pSGVscCBEZXNrQm94ICAgQ09NUExBSU5UICYgU1VHR0VTVElPTiI+PGRpdiBjbGFzcz0ibWFpbmhlYWRpbmciPlBMQUNFTUVOVCBJTkZPLiA8L2Rpdj48aW1nIHNyYz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy95ZWxsb3ctYmFja2dyb3VuZC5qcGciPjwvYT5kAiUPFgIfBAUcPHNwYW4+U3R1ZGVudCBEZXRhaWxzPC9zcGFuPmQCJg8WAh8EBeYBPHA+PHNwYW4+PC9zcGFuPjxhIGhyZWY9IlN0dWRlbnQvQ291cnNlIj5QZXJzb25hbCBJbmZvcm1hdGlvbjwvYT48L3A+PHA+PGEgaHJlZj0iU3R1ZGVudC9TdHVkZW50T2ZmaWNpYWwiPjxzcGFuPjwvc3Bhbj5PZmZpY2lhbCBJbmZvcm1hdGlvbjwvYT48L3A+PHA+PGEgaHJlZj0iU3R1ZGVudC9TdHVkZW50UXVhbGlmaWNhdGlvbiI+PHNwYW4+PC9zcGFuPlF1YWxpZmljYXRpb24gRGV0YWlsPC9hPjwvcD5kAicPFgIfBAUmPHNwYW4+QXNzaWdubWVudCAmIENvdXJzZSBQbGFuIDwvc3Bhbj5kAigPFgIfBAWeAjxwPjxzcGFuPjwvc3Bhbj48YSBocmVmPSJTdHVkZW50L0Fzc2lnbm1lbnQiIHBhZ2U9IlN0dWRlbnQvQXNzaWdubWVudCI+QXNzaWdubWVudCA8L2E+PC9wPjxwPjxzcGFuPjwvc3Bhbj48YSBocmVmPSJTdHVkZW50L0NvdXJzZVBsYW5TdWJqZWN0VG9waWMiIHBhZ2U9IlN0dWRlbnQvQ291cnNlUGxhblN1YmplY3RUb3BpYyI+Q291cnNlIFBsYW4gIDwvYT48L3A+ICAgPHA+PHNwYW4+PC9zcGFuPjxhIGhyZWY9IlN0dWRlbnQvQWNhZG1pY0NhbGVuZGFyIiA+QWNhZG1pYyBDYWxlbmRhciAgPC9hPjwvcD5kAioPFgIfBAXDATxhIGhyZWY9IlN0dWRlbnQvRmVlZEJhY2siPjxkaXYgY2xhc3M9Iml0ZW1fY2F0ZWdvcnlfcG9sbzkiPjxkaXYgY2xhc3M9ImhlYWRpbmdfaXRlbV9jYXRlZ29yeV9wb2xvOSI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvcG9sb2ljb25zOS5wbmciIHdpZHRoPSI3NSI+PHA+RmVlZGJhY2s8L3A+PC9kaXY+PC9kaXY+PC9hPmQCLA8WAh8EBTA8cD48YSBocmVmPSJTdHVkZW50L1BsYWNlbWVudCI+UGxhY2VtZW50PC9hPjwvcD5kAi0PFgIfBAU0PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvcG9sb2ljb25zNS5qcGciPmQCLg8WAh8EBRQ8c3Bhbj5MaWJyYXJ5PC9zcGFuPmQCLw8WAh8EBaACPHA+PGEgaHJlZj0iTGlicmFyeS9MaWJJc3N1ZVJldHVybiI+PHNwYW4+PC9zcGFuPkxpYnJhcnkgSXNzdWUgUmV0dXJuPC9hPjwvcD48cD48YSBocmVmPSJMaWJyYXJ5L0xpYnJhcnlvcGFjIj48c3Bhbj48L3NwYW4+TGlicmFyeSBPUEFDPC9hPjwvcD4gPHA+PGEgaHJlZj0iU3R1ZGVudC9Cb29rUmVzZXJ2YXRpb24iPjxzcGFuPjwvc3Bhbj5Cb29rIFJlc2VydmF0aW9uPC9hPjwvcD48cD48YSBocmVmPSIgU3R1ZGVudC9TdHVkZW50TGVhdmUiPjxzcGFuPjwvc3Bhbj5TdHVkZW50IExlYXZlPC9hPjwvcD4gZAIxDxYCHwQFjwE8QSBIUkVGPSAiaHR0cHM6Ly9nbGJnLnNlcnZlcmdpLmNvbTo4MDcyL0lTSU1HTEIvVXRpbGl0aWVzL2lDb21wbGFpbnRCb3giID48RElWIENMQVNTPSJNQUlOSEVBRElORzEiPkNvbXBsYWludC9TdWdnLi4gPEJSLz5HcmlldmFuY2VzPC9ESVY+PC9hPmQCMg8WAh8EBQ08c3Bhbj48L3NwYW4+ZAIzDxYCHwQFOTxwPjxhIEhyZWYgPSAiU3R1ZGVudC9CYW5rRGV0YWlscyI+IDxzcGFuPjwvc3Bhbj48L2E+PC9wPmQCNQ8WAh8EBW08cD48YSBocmVmPSJTdHVkZW50L0V4YW1SZXN1bHQiPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL3BvbG9pY29uczIucG5nIiBib3JkZXI9IjAiPlJlc3VsdDwvYT48L3A+ZAI3DxYCHwQFcTxwPjxhIGhyZWY9IlN0dWRlbnQvRmVlSW5mb3JtYXRpb24iPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL3BvbG9pY29uczEwLnBuZyIgYm9yZGVyPSIwIj4gRmVlczwvYT48L3A+ZGR5lfyJ9psys4zPfj32MZs++vCXYExotUl4giyCev7h4g==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E06C1771" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAlvfoaU/g6kaM/xwM2VmHmJOhH3aZKIx00BPUKMdFtL1PJewLcQU7yc7Ghu5n3zUtgzBiHxghK8gaX9dlL41ZCmZ+U5Vd4XK6ASk8yu9jM/KWLKVhPCPrKemeBiWS7YEBE8xBZH7gdY3GGlFZ0ZFlSz+X3U+lpMRjG7rsvDyH36/XsQCG9XIwd6f4M3GXFKjhBEgoND/RjnmQuMXJdwF7YjotIqfTbRdxi/kcZSnlAL/A==" />
+</div>
+    
+<center>
+ <span id="MCPH_lblAuthMessage" class="error"></span>
+ </center>
+
+
+
+
+
+
+             
+
+    <input type="hidden" id="hdnAppPath" value="/ISIMGLB/" />
+    <input name="ctl00$hdncollegenewsalerts" type="hidden" id="hdncollegenewsalerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Notice &lt;/span>  &lt;h4> News &lt;/h4> &lt;p> &lt;img src=&#39;http://uj.servergi.com/iSIMSVIET//convert-jpg-to-pdf.net_2016-05-16_14-09-27.pdf&#39; class=&#39;right&#39; hspace=&#39;5&#39; vspace=&#39;5&#39;> News&lt;br>&lt;a href=&quot;&quot; > &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Click Here &lt;/a>&lt;/p>&lt;/div> &lt;/div>" />
+    <input name="ctl00$hdnsystemalerts" type="hidden" id="hdnsystemalerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alerts info &lt;/span>  &lt;h4> Alerts &lt;/h4>  &lt;p>Click Here for Details..&lt;/p>&lt;/div> &lt;/div>" />
+    <input name="ctl00$hdnattendancealerts" type="hidden" id="hdnattendancealerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>You have Attendent Today Classes  0 Out Of 6&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>You were Absent in following Engineering Chemistry (BAS-202)&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>You were Absent in following Fundamental of  Electronics Engineering (BEC-201)&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>You were Absent in following Fundamentals of Mechanical Engineering (BME-201)&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>You were Absent in following Workshop Practice Lab (BWS-251)&lt;/p>&lt;/div> &lt;/div>" />
+    <input name="ctl00$hdnlibraryalerts" type="hidden" id="hdnlibraryalerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Library Info &lt;/span>  &lt;h4> Library &lt;/h4>  &lt;p>Click Here for Details..&lt;/p>&lt;/div> &lt;/div>" />
+    <input name="ctl00$hdnCollege" type="hidden" id="hdnCollege" value="GLBITM" />
+    <input type="hidden" name="ctl00$hdnForSchoolMaster" id="hdnForSchoolMaster" value="0" />
+    <input name="ctl00$txtCaseCSS" type="text" id="txtCaseCSS" value="textDefault" style="display: none;" />
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/jquery.js"></script>
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/contentslider.js"></script>
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/TheCore.js?v=14"></script>
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/tiles.js?v=14"></script>
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/Dashboard.js?v=14"></script>
+
+    <script type="text/javascript" src="App_Themes/Default/Assets/js/coin-slider.min.js"></script>
+
+    <link type="text/css" rel='stylesheet' href="App_Themes/Default/Assets/js/coin-slider-styles.css">
+
+    <script src="App_Themes/Default/Assets/js/jquery.rssfeed.min.js" type="text/javascript"></script>
+
+    <script src="App_Themes/Default/Assets/js/jquery.vticker.js" type="text/javascript"></script>
+
+    <script type='text/javascript' src='App_Themes/Default/Assets/js/jquery.mousewheel.min.js'></script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container_top">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <div class="brand">
+                    <span class="left">
+                        <img src="App_Themes/Default/images/sim-logo.png" class="logo" />
+                    </span><span class="left"><a href="home">SIM</a><div>
+                        Student Interface</div>
+                    </span><span class="left">
+                        <span id="headerImage"><img src="App_Themes/Default/images/for.png" width="21" height="57" /></span>
+                    </span>
+                    <span id="collegelogo"><span class="left"> <img src="App_Themes/Default/images/college-logo.png" class="collegelogo" /></span></span>
+                    <span class="left">
+                        <span id="HeaderName"><a href="home">GLBAJAJ</a></span>
+                    </span>
+                </div>
+            </div>
+            <div class="nav-collapse collapse">
+                <div id="top_navigation_profile">
+                    <ul class="dropdown dropdown-horizontal">
+                        <li><a href="#" class="profile">
+                            <div class="student-image">
+                                
+                                
+<script type="text/javascript">
+
+
+    var w = 1
+    var h = 1
+
+    function gettrailobj() {
+        if (document.getElementById) return document.getElementById("trailimageid").style
+        else if (document.all) return document.all.trailimagid.style
+    }
+
+    function truebody() {
+        return (!window.opera && document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+    }
+
+    function hidetrail() {
+        if (document.getElementById("trailimageid") != null) {
+            document.onmousemove = ""
+            document.getElementById('ttimg').src = 'img/s.gif'
+            gettrailobj().visibility = "hidden"
+            gettrailobj().left = -1000
+            gettrailobj().top = 0
+        }
+    }
+
+
+    function showtrail(width, height, file) {
+
+        if (document.getElementById('trailimageid') != null)
+            if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+                w = width
+                h = height
+                gettrailobj().visibility = "visible"
+                gettrailobj().width = w + 7 + "px"
+                gettrailobj().height = h + 7 + "px"
+                document.getElementById('ttimg').src = file
+                document.getElementById('ttimg').style.width = w + "px"
+                document.getElementById('ttimg').style.height = h + "px"
+                document.onmousemove = followmouse
+
+            }
+            else {
+                $("#ifrmaeImg").attr("title", "No Preview..!!");
+            }
+    }
+
+
+    function followmouse(e) {
+
+        if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+
+            var xcoord = 20
+            var ycoord = 20
+
+            if (typeof e != "undefined") {
+                xcoord += e.pageX
+                ycoord += e.pageY
+            }
+            else if (typeof window.event != "undefined") {
+                xcoord += truebody().scrollLeft + event.clientX
+                ycoord += truebody().scrollTop + event.clientY
+            }
+
+            var docwidth = document.all ? truebody().scrollLeft + truebody().clientWidth : pageXOffset + window.innerWidth - 15
+            var docheight = document.all ? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+
+            if (xcoord + w + 3 > docwidth)
+                xcoord = xcoord - w - (20 * 2)
+
+            if (ycoord - truebody().scrollTop + h > truebody().clientHeight)
+                ycoord = ycoord - h - 20;
+
+            gettrailobj().left = xcoord + "px"
+            gettrailobj().top = ycoord + "px"
+
+        }
+
+    }
+</script>
+<div>
+    <div class="">
+        <img src="/ISIMGLB/Services/getImage.ashx?Category=Student&MasterId=63015&ImageRefName=Photo&IdCode=&height=120&width=100" id="ViewPhoto_ifrmaeImg" style="left: -20; top: -20;" class="image-border" frameborder="0" />
+    </div>
+</div>
+
+                            </div>
+                        </a>
+                            <ul>
+                                <li style="height: 100px !important;">
+                                    <div class="row text-center">
+                                        <div class="student-image1">
+                                            
+                                            
+<script type="text/javascript">
+
+
+    var w = 1
+    var h = 1
+
+    function gettrailobj() {
+        if (document.getElementById) return document.getElementById("trailimageid").style
+        else if (document.all) return document.all.trailimagid.style
+    }
+
+    function truebody() {
+        return (!window.opera && document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+    }
+
+    function hidetrail() {
+        if (document.getElementById("trailimageid") != null) {
+            document.onmousemove = ""
+            document.getElementById('ttimg').src = 'img/s.gif'
+            gettrailobj().visibility = "hidden"
+            gettrailobj().left = -1000
+            gettrailobj().top = 0
+        }
+    }
+
+
+    function showtrail(width, height, file) {
+
+        if (document.getElementById('trailimageid') != null)
+            if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+                w = width
+                h = height
+                gettrailobj().visibility = "visible"
+                gettrailobj().width = w + 7 + "px"
+                gettrailobj().height = h + 7 + "px"
+                document.getElementById('ttimg').src = file
+                document.getElementById('ttimg').style.width = w + "px"
+                document.getElementById('ttimg').style.height = h + "px"
+                document.onmousemove = followmouse
+
+            }
+            else {
+                $("#ifrmaeImg").attr("title", "No Preview..!!");
+            }
+    }
+
+
+    function followmouse(e) {
+
+        if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+
+            var xcoord = 20
+            var ycoord = 20
+
+            if (typeof e != "undefined") {
+                xcoord += e.pageX
+                ycoord += e.pageY
+            }
+            else if (typeof window.event != "undefined") {
+                xcoord += truebody().scrollLeft + event.clientX
+                ycoord += truebody().scrollTop + event.clientY
+            }
+
+            var docwidth = document.all ? truebody().scrollLeft + truebody().clientWidth : pageXOffset + window.innerWidth - 15
+            var docheight = document.all ? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+
+            if (xcoord + w + 3 > docwidth)
+                xcoord = xcoord - w - (20 * 2)
+
+            if (ycoord - truebody().scrollTop + h > truebody().clientHeight)
+                ycoord = ycoord - h - 20;
+
+            gettrailobj().left = xcoord + "px"
+            gettrailobj().top = ycoord + "px"
+
+        }
+
+    }
+</script>
+<div>
+    <div class="">
+        <img src="/ISIMGLB/Services/getImage.ashx?Category=Student&MasterId=63015&ImageRefName=Photo&IdCode=&height=120&width=100" id="ViewPhoto1_ifrmaeImg" style="left: -20; top: -20;" class="image-border" frameborder="0" />
+    </div>
+</div>
+
+                                        </div>
+                                        <div style="clear: both;">
+                                        </div>
+                                        <div class="text">
+                                            <span style="color: yellow; text-align: center;">HELLO,</span>
+                                            <span id="lblStdName">GOLDI SINGH</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="Student/Course">Profile </a></li>
+                                <li><a href="Student/Alerts">Alerts</a></li>
+                                <li><a href="Utilities/ChangePassword">Change Password</a></li>
+                                <li>
+                                    <a id="btnLogOut" href="javascript:__doPostBack(&#39;ctl00$btnLogOut&#39;,&#39;&#39;)">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="full_page_container">
+        <ul id="full_page">
+            <li id="img_container1" class="img_block">
+                <div class="container">
+                    <div class="row">
+                        <div class="span6">
+                            <div class="item_category1">
+                                <div id="Tile1_BackgroundImage"><img src="App_Themes/Default/images/background-news-update.jpg"></div>
+                                <div class="heading_category1">
+                                    <span id="Tile1_Header"><span>College</span></span>
+                                    <img src="App_Themes/Default/images/library-icon.png">
+                                </div>
+                                <div class="description_item_category1 disp_item_category1">
+                                    <div id="slider2" class="sliderwrapper">
+                                        <div class='contentdiv'> <div> <span>Notice </span>  <h4> News </h4> <p> <img src='http://uj.servergi.com/iSIMSVIET//convert-jpg-to-pdf.net_2016-05-16_14-09-27.pdf' class='right' hspace='5' vspace='5'> News<br><a href="" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click Here </a></p></div> </div>
+                                        <div id="paginate-slider2" class="pagination1">
+                                            <a href="#" class="prev" style="margin-left: 10px">
+                                                <img src="App_Themes/Default/images/news-left-arrow.png" class="news_icon">
+                                            </a><a href="#" class="next">
+                                                <img src="App_Themes/Default/images/news-right-arrow.png" class="news_icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="item_twitter">
+                                <img src="App_Themes/Default/images/Sunny.png">
+                                <div class="heading_category">
+                                    <span id="Tile2_Header"><span>Alerts</span></span><img src="App_Themes/Default/images/library-icon.png"></div>
+                                <div class="description_twitter disp_twitter">
+                                    <div id="slider3" class="sliderwrapper">
+                                        <div id="Tile2_Hyperlink"><a href="Student/Alerts"><div class='contentdiv'> <div> <span>Alerts info </span>  <h4> Alerts </h4>  <p>Click Here for Details..</p></div> </div></a></div>
+                                        <div id="paginate-slider3" class="pagination1">
+                                            <a href="#" class="prev paginate-slider2" style="margin-left: 10px">
+                                                <img src="App_Themes/Default/images/news-left-arrow.png" class="news_icon"></a>
+                                            <a href="#" class="next">
+                                                <img src="App_Themes/Default/images/news-right-arrow.png" class="news_icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <a href="Student/TodayAttendence">
+                                <div class="item_category4">
+                                    <img src="App_Themes/Default/images/item_category4.png">
+                                    <div class="heading_item_category4">
+                                        <span id="Tile3_Header"><span>Attendance</span></span>
+                                        <img src="App_Themes/Default/images/library-icon.png" style="-moz-transform: scale(1.0);
+                                            -webkit-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0);
+                                            transform: scale(1.0);">
+                                    </div>
+                                    <div class="description_item_category4 disp_item_category4">
+                                        <div id="slider4" class="sliderwrapper">
+                                            <div id="tile3_Hyperlink"><a href="Student/TodayAttendence""><div class='contentdiv'> <div> <span>Alert </span>  <h4> Attendance </h4>  <p>You have Attendent Today Classes  0 Out Of 6</p></div> </div><div class='contentdiv'> <div> <span>Alert </span>  <h4> Attendance </h4>  <p>You were Absent in following Engineering Chemistry (BAS-202)</p></div> </div><div class='contentdiv'> <div> <span>Alert </span>  <h4> Attendance </h4>  <p>You were Absent in following Fundamental of  Electronics Engineering (BEC-201)</p></div> </div><div class='contentdiv'> <div> <span>Alert </span>  <h4> Attendance </h4>  <p>You were Absent in following Fundamentals of Mechanical Engineering (BME-201)</p></div> </div><div class='contentdiv'> <div> <span>Alert </span>  <h4> Attendance </h4>  <p>You were Absent in following Workshop Practice Lab (BWS-251)</p></div> </div></a></div>
+                                            <div id="paginate-slider4" class="pagination1">
+                                                <a href="#" class="prev" style="margin-left: 10px">
+                                                    <img src="App_Themes/Default/images/news-left-arrow.png" class="news_icon"></a>
+                                                <a href="#" class="next">
+                                                    <img src="App_Themes/Default/images/news-right-arrow.png" class="news_icon"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span3">
+                            <div class="item_category4" style="background-color: #0079AE; height: 209px;">
+                                <div id="Tile4_Image"><img src="App_Themes/Default/images/library3.png"></div>
+                                <div class="heading_item_category4" style="width: 135px !important;">
+                                    <span id="Tile4_Header"><span>Library</span></span>
+                                    <img src="App_Themes/Default/images/library-icon.png" style="-moz-transform: scale(1.0);
+                                        -webkit-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0);
+                                        transform: scale(1.0);"></div>
+                                <div id="Tile4_Hyperlink"><div class="description_item_category4 disp_item_category4"><div id="slider5" class="sliderwrapper"><a href="Library/LibIssueReturn"><div class='contentdiv'> <div> <span>Library Info </span>  <h4> Library </h4>  <p>Click Here for Details..</p></div> </div><div Id="paginate-slider5"" class="pagination1"><a href="#" class="prev" style="margin-left: 10px"><img src="App_Themes/Default/images/news-left-arrow.png" class="news_icon"></a> <a href="#" class="next"><img src="App_Themes/Default/images/news-right-arrow.png" class="news_icon"></a></div></a></div></div></div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="item_category5">
+                                <div class="heading_item_category5">
+                                    <span id="Tile5_Header"><span>Notice</span></span>
+                                    <img src="App_Themes/Default/images/library-icon.png"></div>
+                                <div class="mainheading">
+                                    <div id="Tile5_Hyperlink"><a  Href="Utilities/Circular" Style="fontsize: 12px" >Notice</a> <br></div>
+                                </div>
+                                <img src="App_Themes/Default/images/viewstore.jpg">
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div id="games" old="https://plus.google.com/photos/116874396328901424003/albums/6044390862548797761">
+                                <div id="Tile6_Hyperlink"><a href="https://www.glbajajgroup.org/" onclick="javascript:void window.open("","","width=1000,height=700,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0");return false;"><IMG SRC="App_Themes/Default/images/banner1.jpg" CLASS="cube" WIDTH="428" HEIGHT="210"><IMG SRC="App_Themes/Default/images/banner2.png" CLASS="cube" WIDTH="428" HEIGHT="210"><IMG SRC="App_Themes/Default/images/banner3.jpg" CLASS="cube" WIDTH="428" HEIGHT="210"><IMG SRC="App_Themes/Default/images/banner4.png" CLASS="cube" WIDTH="428" HEIGHT="210"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span3 ">
+                            <div class="item_category3">
+                                <div id="Tile7_Header"><a href="http://www.facebook.com/.." target="_blank"><img src="App_Themes/Default/images/Facebook-Logo.jpg" border="0"></a></div>
+                                <div id="Tile7_Hyperlink"></div>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="item_category8">
+                                <div id="Tile8_Header"><a href="https://www.facebook.com/..."><img src="App_Themes/Default/images/item_category8.jpg"><div class="heading_item_category8"><span>Naukri</span><img src="App_Themes/Default/images/library-icon.png" style="-moz-transform: scale(1.0);-webkit-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0);transform: scale(1.0);"></div><div id="ticker3" class="description_item_category8 disp_item_category8"> </div></a></div>
+                                <div id="Tile8_Hyperlink"></div>
+                            </div>
+                        </div>
+                        <div class="span3 ">
+                            <div class="item_category3">
+                                <div id="Tile9_Hearder"><a href="Student/TimeTable"><div class="mainheading">STUDENT TIMETABLE</div><img src="App_Themes/Default/images/orange-background.jpg"></a></div>
+                                <div id="Tile9_Hyperlink"></div>
+                            </div>
+                        </div>
+                        <div class="span3 ">
+                            <div class="item_category10">
+                                <div id="Tile10_Hearder"><a href= "Utilities/Circular?doctype=placement" abc="Utilities/iHelp DeskBox   COMPLAINT & SUGGESTION"><div class="mainheading">PLACEMENT INFO. </div><img src="App_Themes/Default/images/yellow-background.jpg"></a></div>
+                                <div id="Tile10_Hyperlink"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="img_container2" style="display: none" class="img_block">
+                <div class="container">
+                    <div class="calender" style="position: relative;">
+                        <div class=" noshow1">
+                        </div>
+                        <div class="top-icons">
+                            <span class="left">
+                                <img src="App_Themes/Default/images/icon-main.png">
+                            </span><span class="right">
+                                <img src="App_Themes/Default/images/circle-plus.png">
+                                <img src="App_Themes/Default/images/circle-plus.png">
+                                <img src="App_Themes/Default/images/circle-plus.png">
+                                <img src="App_Themes/Default/images/circle-plus.png"></span>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div class="main">
+                            <span class="arrow-left">
+                                <img src="App_Themes/Default/images/calender-arrow-left.png"></span>
+                            <h1>
+                                Nov-2014</h1>
+                            <span class="arrow-right">
+                                <img src="App_Themes/Default/images/calender-arrow-right.png"></span>
+                        </div>
+                        <div class="day">
+                            <ul>
+                                <li class="first">Mo</li>
+                                <li>Tu</li>
+                                <li>We</li>
+                                <li>Th</li>
+                                <li>Fr</li>
+                                <li>Sa</li>
+                                <li>Su</li>
+                            </ul>
+                        </div>
+                        <div class="dates">
+                            <ul>
+                                <li class="oldday">30</li>
+                                <li class="oldday">01</li>
+                                <li class="event3">02</li>
+                                <li class="event4">03</li>
+                                <li class="notes">04</li>
+                                <li>05</li>
+                                <li>06</li>
+                                <li>07</li>
+                                <li>08</li>
+                                <li>09</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28 </li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>31</li>
+                                <li class="oldday">01</li>
+                                <li class="oldday">02</li>
+                                <li class="oldday">03</li>
+                            </ul>
+                        </div>
+                        <div class="border-bottom">
+                        </div>
+                        <div class="eventcalender">
+                            <ul>
+                                <li><span class="time">09.00</span><span class="am"> AM</span></li>
+                                <li><span>Seminar...</span></li>
+                                <li><span class="greycircle"></span></li>
+                            </ul>
+                        </div>
+                        <div class="border-bottom">
+                        </div>
+                        <div class="eventcalender odd">
+                            <ul>
+                                <li><span class="time">03.30</span><span class="am"> PM</span></span></li>
+                                <li><span>Computer Lab session </span></li>
+                                <li><span class="redcircle"></span></li>
+                            </ul>
+                        </div>
+                        <div class="border-bottom">
+                        </div>
+                        <div class="eventcalender">
+                            <ul>
+                                <li><span class="time">04.00</span><span class="am"> PM</span></span></li>
+                                <li><span>Sports activity</span></li>
+                                <li><span class="greencircle"></span></li>
+                            </ul>
+                        </div>
+                        <div class="border-bottom">
+                        </div>
+                        <div class="eventcalender odd">
+                            <ul>
+                                <li><span class="time">05.00</span><span class="am"> PM</span></span></li>
+                                <li><span>Leaving party!!</span></li>
+                                <li><span class="greycircle"></span></li>
+                            </ul>
+                            <div class="border-bottom">
+                            </div>
+                        </div>
+                        <div class="white">
+                        </div>
+                        <div class="toggle_calender">
+                            <ul>
+                                <li>List</li>
+                                <li class="active">Day</li>
+                                <li>Month</li>
+                                <li class="last">Year</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="img_container3" class="img_block">
+                <div class="container_polo">
+                    <div class="row_polo">
+                        <div class="polo_span1">
+                            <div class="item_category_polo1">
+                                <div class="heading_item_category_polo1">
+                                    <img src="App_Themes/Default/images/poloicons1.png"></div>
+                                <div class="description_item_category_polo1 disp_item_category_polo1">
+                                    <div id="Tile11_Hearder"><span>Student Details</span></div>
+                                    <div id="Tile11_Hyperlink"><p><span></span><a href="Student/Course">Personal Information</a></p><p><a href="Student/StudentOfficial"><span></span>Official Information</a></p><p><a href="Student/StudentQualification"><span></span>Qualification Detail</a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="polo_span2">
+                            <div class="item_category_polo2">
+                                <div class="heading_item_category_polo2">
+                                    <div class="left">
+                                    </div>
+                                    <div class="date_right">
+                                    </div>
+                                </div>
+                                <div class="description_item_category_polo2 disp_item_category_polo2">
+                                    <div id="Tile12_Hearder"><span>Assignment & Course Plan </span></div>
+                                    <div id="Tile12_Hyperlink"><p><span></span><a href="Student/Assignment" page="Student/Assignment">Assignment </a></p><p><span></span><a href="Student/CoursePlanSubjectTopic" page="Student/CoursePlanSubjectTopic">Course Plan  </a></p>   <p><span></span><a href="Student/AcadmicCalendar" >Acadmic Calendar  </a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="polo_span9">
+                            <div id="Tile13_Hearder"></div>
+                            <div id="Tile13_Hyperlink"><a href="Student/FeedBack"><div class="item_category_polo9"><div class="heading_item_category_polo9"><img src="App_Themes/Default/images/poloicons9.png" width="75"><p>Feedback</p></div></div></a></div>
+                        </div>
+                        <div class="polo_span4">
+                            <div class="item_category_polo4">
+                                <div class="heading_item_category_polo4">
+                                    <p>
+                                        <div id="Tile14_Hearder"></div>
+                                        <div id="Tile14_Hyperlink"><p><a href="Student/Placement">Placement</a></p></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_polo">
+                        <div class="polo_span5">
+                            <div class="item_category_polo5">
+                                <div class="heading_item_category_polo5">
+                                    <div id="Tile15_Background"><img src="App_Themes/Default/images/poloicons5.jpg"></div>
+                                </div>
+                                <div class="description_item_category_polo5 disp_item_category_polo5">
+                                    <div id="Tile15_Hearder"><span>Library</span></div>
+                                    <div id="Tile15_Hyperlink"><p><a href="Library/LibIssueReturn"><span></span>Library Issue Return</a></p><p><a href="Library/Libraryopac"><span></span>Library OPAC</a></p> <p><a href="Student/BookReservation"><span></span>Book Reservation</a></p><p><a href=" Student/StudentLeave"><span></span>Student Leave</a></p> </div>
+                                </div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="polo_span6">
+                            <div class="item_category_polo6">
+                                <div class="item_category_polo2">
+                                    <div class="heading_item_category_polo2">
+                                        <div class="left">
+                                        </div>
+                                        <div class="date_right">
+                                        </div>
+                                    </div>
+                                    <div class="description_item_category_polo2 disp_item_category_polo2">
+                                        <div id="Div1">
+                                            <span>Links.. </span>
+                                        </div>
+                                        <div id="Div2">
+                                            <p>
+                                                <span></span>
+                                                <p>
+                                                    <a href="Student/HostelLeave">Hostel Leave </a>
+                                                </p>
+                                        </div>
+                                        <p>
+                                            <span></span><a href="Student/BankDetails">Student Bank Details.. </a>
+                                        </p>
+                                        <p>
+                                            <span></span><a href="Student/Bank Neft Details">Neft Details </a>
+                                        </p>
+                                        <p>
+                                            <span></span><a href="Utilities/Grievance">Grievance </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="polo_span7">
+                            <div class="item_category_polo7">
+                                <div class="heading_item_category_polo7">
+                                    <img src="App_Themes/Default/images/poloicons7.png">
+                                    <div id="Tile16_Hearder"></div>
+                                    <div id="Tile16_Hyperlink"><A HREF= "https://glbg.servergi.com:8072/ISIMGLB/Utilities/iComplaintBox" ><DIV CLASS="MAINHEADING1">Complaint/Sugg.. <BR/>Grievances</DIV></a></div>
+                                </div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="polo_span8">
+                            <div class="item_category_polo8">
+                                <div class="heading_item_category_polo8">
+                                    <div id="Tile17_Hearder"><span></span></div>
+                                    <div id="Tile17_Hyperlink"><p><a Href = "Student/BankDetails"> <span></span></a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_polo">
+                        <div class="polo_span3">
+                            <div class="item_category_polo3">
+                                <div class="heading_item_category_polo3">
+                                    <div id="Tile18_Hearder"></div>
+                                    <div id="Tile18_Hyperlink"><p><a href="Student/ExamResult"><img src="App_Themes/Default/images/poloicons2.png" border="0">Result</a></p></div>
+                                </div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="polo_span10">
+                            <div class="item_category_polo10">
+                                <div class="heading_item_category_polo10">
+                                    <div id="Tile19_Hearder"></div>
+                                    <div id="Tile19_Hyperlink"><p><a href="Student/FeeInformation"><img src="App_Themes/Default/images/poloicons10.png" border="0"> Fees</a></p></div>
+                                </div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="polo_span11">
+                            <div class="item_category_polo11">
+                                <div class="heading_item_category_polo11">
+                                    <div class="left">
+                                        <p>
+                                            Registration
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="description_item_category_polo11 disp_item_category_polo11">
+                                    <span>Registration Links... </span><span></span>
+                                    <p>
+                                        <a href="#" a1="Student/StudentExamRegistration?type=Regular"></a>
+                                    </p>
+                                    <p>
+                                        <a href="Student/StudentSubjectRegistrationReporting" a1="StudentUpdateinfo">Student Registration-2025-26 </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="polo_span12">
+                            <div class="item_category_polo12">
+                                <div class="heading_item_category_polo12">
+                                </div>
+                                <div class="description_item_category_polo12 disp_item_category_polo12">
+                                    <span></span><a href="Student/StudentExamRegistration?type=Regular"><span>Admit Card
+                                    </span><a href="Student/StudentExamRegistration?type=Regular"><span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+    </li> </ul> </div>
+    </form>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('html, body, *').mousewheel(function(e, delta) {
+                this.scrollLeft -= (delta * 40);
+                e.preventDefault();
+            });
+
+
+            $('#games').coinslider({ hoverPause: false });
+
+            $('#ticker1').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {}, function(e) {
+                $(e).find('div.rssBody').vTicker();
+            });
+
+            $('#ticker2').rssfeed('https://www.facebook.com/feeds/notifications.php?id=229022860490339&viewer=547527233&key=AWiyuEiotmaMXgDt&format=rss20', {}, function(e) {
+                $(e).find('div.rssBody').vTicker({ showItems: 2 });
+            });
+
+            $('#ticker3').rssfeed('http://jobsearch.naukri.com/mynaukri/mn_newsmartsearch.php?xz=1_0_15&xo=2727&xl=rss&rss=r&type=all&qf[]=catid_22', {}, function(e) {
+                $(e).find('div.rssBody').vTicker({ showItems: 1 });
+            });
+        });
+
+        $(function() {
+            var diff = 0;
+            var id_current = $('.img_button').attr('id');
+            $('.img_button').click(function() {
+                var id_click = $(this).attr('id');
+                if (id_click > id_current) {
+                    var diff = id_click - id_current;
+                    var move = 971 * diff;
+                    var thisthis = $('#full_page');
+                    thisthis.animate(
+						{
+						    "left": "-=" + move + "px"
+						}, 1500);
+
+                    $('#' + id_click).css('opacity', 1);
+                    $('#' + id_current).css('opacity', .5);
+
+                }
+                else {
+                    var diff = id_current - id_click;
+                    var move = 971 * diff;
+                    var thisthis = $('#full_page');
+                    thisthis.animate(
+							{
+							    "left": "+=" + move + "px"
+							}, 1500);
+                    $('#' + id_click).css('opacity', 1);
+                    $('#' + id_current).css('opacity', .5);
+                }
+                id_current = id_click;
+
+            });
+        });
+
+        featuredcontentslider.init({
+            id: "slider2",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {
+            }
+        })
+
+        featuredcontentslider.init({
+            id: "slider3",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {
+            }
+        })
+
+        featuredcontentslider.init({
+            id: "slider4",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {
+            }
+        })
+
+
+        featuredcontentslider.init({
+            id: "slider5",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {
+            }
+        })  
+    </script>
+
+    <style>
+        .student-image .image-border
+        {
+            max-width: 60px !important;
+            border-radius: 50%;
+            width: 40px !important;
+            height: 40px !important;
+        }
+        .student-image1
+        {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .student-image1 .image-border
+        {
+            max-width: 80px !important;
+            border-radius: 50%;
+            width: 80px !important;
+            height: 80px !important;
+        }
+        .text
+        {
+            font-weight: bold;
+            text-align: center;
+        }
+        .left
+        {
+            float: left;
+        }
+    </style>
+</body>
+</html>
+
+</body>
+</html>
