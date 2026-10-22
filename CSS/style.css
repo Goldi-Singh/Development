@@ -1,0 +1,29 @@
+h2{
+    color:rgb(12, 177, 180);
+}
+button{
+    color:rgb(240, 45, 11);
+}
+
+p{
+    text-align:center;
+}
+h1{
+    text-align:center;
+    text-decoration:red wavy underline;
+}
+div{
+    height:100px;
+    width:100px;
+    background-color:chartreuse;
+}
+@media(width:200px){
+     div{
+        background-color:blue;
+    }
+}
+@media(min-width:500px) and (max-width:1000px){
+    div{
+        background-color:maroon;
+    }
+}

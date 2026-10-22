@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="post"
+      enctype="multipart/form-data">
+  <label for="name">Full name</label>
+  <input type="text" id="name" name="name"
+         required minlength="3"><br>
+ 
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email"
+         required><br>
+ 
+  <label for="pwd">Password</label>
+  <input type="password" id="pwd" name="pwd"
+         required minlength="8"><br>
+   <label for="phone">Phone</label>
+  <input type="tel" id="phone" name="phone"
+         pattern="[0-9]{10}" required><br>
+ 
+  <label for="dob">Date of birth</label>
+  <input type="date" id="dob" name="dob"
+         required><br>
+ 
+  <fieldset>
+    <legend>Gender</legend>
+    <input type="radio" id="m" name="gender"
+           value="male" required>
+    <label for="m">Male</label>
+    <input type="radio" id="f" name="gender"
+           value="female">
+    <label for="f">Female</label>
+  </fieldset>
+  <fieldset>
+    <legend>Skills</legend>
+    <input type="checkbox" id="s1"
+           name="skills" value="html">
+    <label for="s1">HTML</label>
+    <input type="checkbox" id="s2"
+           name="skills" value="css">
+    <label for="s2">CSS</label>
+  </fieldset>
+ 
+  <label for="course">Course</label>
+  <select id="course" name="course" required>
+    <option value="">-- Select --</option>
+    <option value="cse">B.Tech CSE</option>
+    <option value="ece">B.Tech ECE</option>
+  </select><br>
+<label for="photo">Profile picture</label>
+  <input type="file" id="photo" name="photo"
+         accept="image/*"><br>
+ 
+  <label for="addr">Address</label><br>
+  <textarea id="addr" name="address"
+            rows="3" cols="30"></textarea><br>
+ 
+  <input type="checkbox" id="terms"
+         name="terms" required>
+  <label for="terms">Accept terms</label><br>
+ 
+  <button type="submit">Register</button>
+  <button type="reset">Reset</button>
+</form>
+
+</body>
+</html>
